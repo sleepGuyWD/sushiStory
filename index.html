@@ -7,9 +7,11 @@
   <link href="./styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap" rel="stylesheet">
   <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-sushi-96.png">
+  <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
   <title>sushiStory</title>
 </head>
-<body class=" font-Dosis h-3/5   ">
+<body class="font-Dosis h-3/5   " x-data>
   <nav class="shadow-xl bg-color ">
     <div class="navbar bg-base-100 fixed top-0 left-0 z-10">
       <div class="flex-1">
@@ -28,17 +30,49 @@
 
   <div class="hero h-screen  " style="background-image: url(./img/sushiHero.jpg);">
     <div class="hero-overlay bg-opacity-70"></div>
-    <div class=" text-center text-neutral-content h-1/2">
-      <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold  ">Hello there</h1>
-        <p class="mb-5">Welcome to Sushi Paradise, where you can indulge in the freshest and most authentic sushi. Our skilled sushi chefs use only the highest quality ingredients to craft delicious and visually stunning rolls. Whether you're a sushi connoisseur or trying it for the first time, our menu offers something for everyone. Join us for a meal or order online for pickup or delivery. Let us take you on a culinary journey to Japan with every bite. Discover the taste of true sushi perfection at Sushi Paradise.</p>
+    <div class=" flex justify-center h-full items-center text-center text-neutral-content">
+      <div class="flex max-w-md items-center flex-col ">
+        <h1 
+          class="mb-5 text-5xl font-bold tracking-wider opacity-0 duration-1000 translate-y-full"
+          x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"
+        >Hello there</h1>
+        <p 
+          class="mb-5 rounded bg-zinc-800 tracking-widest p-5
+          opacity-0 duration-1000 translate-x-full"
+          x-intersect="$el.classList.add('opacity-100', 'translate-x-0')"
+        >
+          Welcome to Sushi Paradise, where you can indulge in the freshest and most authentic sushi. Our skilled sushi chefs use only the highest quality ingredients to craft delicious and visually stunning rolls. Whether you're a sushi connoisseur or trying it for the first time, our menu offers something for everyone. Join us for a meal or order online for pickup or delivery. Let us take you on a culinary journey to Japan with every bite. Discover the taste of true sushi perfection at Sushi Paradise.</p>
       </div>
     </div>
 
   </div>
   <section class="w-full h-1/4 bg-[#DCA54C] flex justify-center items-center">
-    <section class="w-3/5 h-3/4 bg-black rounded-full">
-      <img src="https://icons8.com/icon/DkSEjYe1UqKc/sushi" alt="">
+    <section 
+      class="
+        w-3/5 
+        h-3/4 
+        bg-black 
+        rounded-full
+        opacity-0
+        duration-1000
+        flex
+
+        items-center
+        place-content-evenly
+
+      "
+      x-intersect="$el.classList.add('opacity-100')"
+    >
+      <img class="opacity-0 duration-1000 translate-y-full"
+      x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"src="../public/img/icons8-sushi-64.png" alt="">
+      <img class="opacity-0 duration-1000 translate-y-full"
+      x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"src="../public/img/orangeSush.png" alt="">
+      <img class="opacity-0 duration-1000 translate-y-full"
+      x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"src="../public/img/yellowEgg.png" alt="">
+      <img class="opacity-0 duration-1000 translate-y-full"
+      x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"src="../public/img/salmonSush.png" alt="">
+      <img class="opacity-0 duration-1000 translate-y-full"
+      x-intersect="$el.classList.add('opacity-100', 'translate-y-0')"src="../public/img/rollThing.png" alt="">
     </section>
   </section>
   <section class="h-4/5 ">
@@ -50,6 +84,7 @@
    
       
   </section>
+  <script src="../public/main.js"></script>
 </body>
 <footer class=" footer footer-center p-10 bg-base-200 text-base-content rounded">
   <div class="grid grid-flow-col gap-4">
