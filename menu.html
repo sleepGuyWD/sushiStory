@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="luxury" class="h-full ">
+<html lang="en" data-theme="luxury" class="h-full scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
   <title>sushStory</title>
 </head>
-<body class="font-Dosis h-3/5">
-  <nav class="shadow-xl bg-color ">
-    <div class="navbar bg-base-100 fixed top-0 left-0 z-10">
+<body class="font-Dosis h-3/5 " x-data>
+  <nav class="shadow-xl bg-color " id="menuSec">
+    <div class="navbar bg-base-100 fixed top-0 left-0 z-10 mb-24" >
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-3xl">sushiStory</a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1  text-2xl">
           <li><a href="./index.html">Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a href="./menu.html">Our Menu</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a href="#menuSec">Our Menu</a></li>
+        
         </ul>
       </div>
     </div>
@@ -33,179 +34,270 @@
           
         </div>
       </section>
-      <section class="mt-20">
+      <section  class="mt-20 py-16">
         <div>
         <section class="flex justify-center">
           <div class="flex justify-center h-full w-4/5 flex-wrap items-center">
 
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
-            <div class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96">
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
               <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
               <div class="card-body">
                 <h2 class="card-title">
                   Something Roll!
                   <div class="badge badge-secondary">NEW</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
                 <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div> 
-                  <div class="badge badge-outline">Products</div>
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
                 </div>
               </div>
             </div>
+
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+            <div x-intersect="$el.classList.add('opacity-100', 'translate-y-0')" class="card w-full bg-base-100 shadow-xl  mb-10 md:mr-10 lg:w-96 opacity-0 duration-1000 translate-y-0">
+              <figure><img src="./img/cardSush.jpg" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">
+                  Something Roll!
+                  <div class="badge badge-secondary">NEW</div>
+                </h2>
+                <p>Experience the bold and fiery flavors with our spicy sushi roll, made with a tantalizing blend of spicy tuna, jalapeño, and sriracha sauce, guaranteed to ignite your taste buds.</p>
+                <div class="card-actions justify-end">
+                  <div class="badge badge-outline">Spicy!</div> 
+                  <div class="badge badge-outline">Special Roll</div>
+                </div>
+              </div>
+            </div>
+
+            
             
           
            
